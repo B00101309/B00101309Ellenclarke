@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Story of ITB</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/flaunt.js"></script>
+
+
+</head>
+
+<div class="container">
+<div class="img">
+	<img src="images/logo.jpg" alt="ITB">
+	</div>
+
+
+<div class="topnav" id="myTopnav">
+ 
+  <a href="Index.html" alt="Home" class="active"> Home</a> 
+<a href="About.html" alt="About">About</a> 
+  
+  <div class="dropdown">
+	  <button class="dropbtn"><a href="History.html" alt="History">History of ITB</a></button>
+     
+     <div class="dropdown-content">
+      <a href="Buisness.html">Buisness of ITB.</a>	
+     </div>
+     
+      <a href="Ecology.html" alt="ecology">The ecological aspects of ITB</a> 
+      
+		 <div class="dropdown">
+     <button class="dropbtn2"><a href="Cdm.html" alt="cdm">cdm</a></button>
+    
+    <div class="dropdown-content">
+      <a href="Cdmone.html">cdm 1st year</a>
+      <a href="Cdm2.html">cdm 2nd year</a>
+       </div>
+	  </div>
+	  
+	<a href="Contact.html" alt="contact">Contact</a>
+</div>
+	
+<body>
+<div class="mySlides">
+  <!-- Full-width images with number and caption text -->
+  
+    <img class="mySlides" src="images/croi.jpg" >
+    <img class="mySlides" src="images/2862-286.jpg" >
+    <img class="mySlides" src="images/int2010.jpg" >
+  
+  <!-- Next and previous buttons -->
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>  
+<script>
+	var slideIndex = 1;
+showDivs(slideIndex);
+
+// Next/previous controls
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showSlides(n) 
+	{
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 5; i < slides.length; i++) }
+      slides[i].style.display = "relative"; 
+  for (i = 5; i < dots.length; i++)
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<div class="heading">
+<h2> Welcome!</h2>
+</div>
+	
+<div class="Column1">
+ITB (The Insttute of Technology Blanchardstwon) is a tecnological insitute of higher education.
+We are soon to be part of TU4D- Technological Universities for Dublin. A hudge step forward for us!
+</div>
+
+<div class="Column2">
+This site is all about the story of ITB-Past, present and possible future-Click on to see more!
+</div>
+
+<div class="imgabout">
+<img src="images/TU2.jpg"></div>
+
+<ul>
+	<li id="scale"> <a href="https://www.facebook.com/">
+	<img src="images/facebook.png" alt="facebook"></a></li>
+	<li id="position"><a href="https://www.instagram.com"><img src="images/instagram.jpg" alt="Instagram"></a></li>
+	<li id="rotate"><a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter"></a></li>
+	<li id="rotate2"><a href="https://www.moodle.com"><img src="images/moodle.png" alt="moodle"></a></li>
+</ul>
+
+<div class="linksitemap">
+<a href="Sitemap.html" > Click here for our sitemap.</a>
+	</div>
+	
+<div class="footer">
+	<footer>Copyright Ellen Clarke</footer>
+</div>
+</body>
+	</div>
+	</div>
+</html>
